@@ -4,6 +4,7 @@ import { Lusitana } from 'next/font/google';
 import Link from 'next/link';
 import { lusitana } from './ui/fonts';
 import Image from "next/image"
+import TypedText from './ui/TypedText';
 
 export default function Page() {
   return (
@@ -16,6 +17,9 @@ export default function Page() {
           <div
               className="relative w-0 h-0 border-l-[15px] border-r-[15px] border-b-[26px] border-l-transparent border-r-transparent border-b-black"
             />
+            <p>
+              <TypedText/>
+            </p>
           <p className={` ${lusitana.className} text-xl text-gray-800 md:text-3xl md:leading-normal`}>
             <strong>Welcome to Acme.</strong> This is the example for the{' '}
             <a href="https://nextjs.org/learn/" className="text-blue-500">
